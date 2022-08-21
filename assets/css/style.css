@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url('../fonts/iranyekanweblight.woff2') format('woff2');
+}
+*{
+    font-family: 'iranyekan';
+}
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+header {
+    height: 678px;
+    background : url('../images/bg-header.jpg');
+    background-size: cover;
+    background-repeat: repeat-x;
+    position: relative;
+    animation : headerbackgroundanimation 60s linear infinite reverse;
+    background-position: 0 0 ;
+}
+header .saye{
+    position: absolute;
+    left : 0 ;
+    top : 0 ;
+    bottom : 0 ;
+    right : 0 ;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 188, 236, 0.3);
+}
+header .container {
+    position: absolute;
+    width: 90%;
+    margin : 0 auto;
+    height: 100%;
+    top : 0 ;
+    left : 0 ;
+    right : 0 ;
+    bottom : 0 ;
+}
+header .container .menu{
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .bottom{
+    height: 100%;
+    display: flex;
+
+}
+header .container .bottom .mobile {
+    width: 30%;
+}
+header .container .bottom .mobile .mobile-container{
+    background : url('../images/mobile.png');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+header .container .bottom .mobile .mobile-container .slider{
+    background: url('../images/mobile-screen-3.jpeg');
+    background-size : 100% 100%;
+    background-repeat: no-repeat;
+    height: 73%;
+    width: 69%;
+    margin: 0% 22%;
+    position: relative;
+    animation : changemobileimg 3s linear infinite;
+    top: 15%;
+}
+header .container .bottom .download {
+    color : #fff;
+    width: 70%;
+    padding : 6%;
+    box-sizing: border-box;
+}
+header .container .bottom .download h2{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+header .container .bottom .download h3{
+    margin-top : 3%;
+    font-size: 1.5rem;
+}
+header .container .bottom .download .links{
+    margin-top : 10%;
+}
+header .container .bottom .download .links a{
+    width: 30%;
+    display: inline-block;
+    background : #fff;
+    text-align: center;
+    text-decoration: none;
+    padding : 10px 5px;
+    border-radius: 15px;
+    color : rgba(42, 188, 236, 1);
+}
+main {
+    margin-top : 20%;
+}
+main .feature-item{
+    display: flex;
+}
+main .feature-item .info{
+    width: 60%;
+    padding : 6%;
+    box-sizing: border-box;
+}
+main .feature-item .info h2{
+    font-size : 1.4rem;
+    line-height: 3;
+    color : #509646;
+    font-weight: bold;
+}
+main .feature-item .info p{
+    font-size : 1.2rem;
+    line-height: 1.7;
+}
+main .feature-item .image{
+    width: 40%;
+    text-align: center;
+}
+main .feature-item .image img{
+    width: 70%;
+}
+body{
+    background : url('../images/bg-main.png');
+}
+footer{
+    margin-top: 4%;
+    background: linear-gradient(
+        45deg, #1488b9 0%, #20aac6 100%);
+}
+footer .container{
+    width: 80%;
+    margin: 0 auto;
+}
+footer .container h1{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 4% 0 1%;
+}
+footer .container h1 span{
+    font-weight: 300;
+}
+footer .container .footer-contact{
+    display: flex;
+}
+footer .container .footer-contact .email-box{
+    width: 30%;
+}
+footer .container .footer-contact .email-box h3{
+    color: #fff;
+    padding: 10% 0;
+    font-size: 1.2rem;
+}
+footer .container .footer-contact .email-box .news-box{
+    width: 95%;
+    /* margin: 0 auto; */
+    display: flex;
+}
+footer .container .footer-contact .email-box .news-box input{
+    width: 70%;
+    line-height: 2.5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+    padding-right: 5%;
+    background: rgba(20, 120, 152, 0.5);
+}
+footer .container .footer-contact .email-box .news-box input::placeholder{
+    color: #fff;
+}
+footer .container .footer-contact .email-box .news-box button{
+    width: 20%;
+    line-height: 2.5;
+    background: #198199;
+    border: none;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+footer .container .footer-contact .email-box .news-box button:hover{
+    background: #0d424e;
+    cursor: pointer;
+}
+footer .container .footer-contact .email-box p{
+    color: #fff;
+    padding: 8% 0;
+    font-size: .9rem;
+}
+footer .container .footer-contact .contact-us{
+    width: 20%;
+    text-align: center;
+}
+footer .container .footer-contact .contact-us .title{
+    padding: 15% 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+footer .container .footer-contact .contact-us .list ul{
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+}
+footer .container .footer-contact .contact-us .list ul li{
+    line-height: 2.5;
+}
+footer .container .footer-contact .contact-us .list ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .container .footer-contact .more{
+    width: 20%;
+    text-align: center;
+}
+footer .container .footer-contact .more .title{
+    padding: 15% 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+footer .container .footer-contact .more .list ul{
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+}
+footer .container .footer-contact .more .list ul li{
+    line-height: 2.5;
+}
+footer .container .footer-contact .more .list ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* footer .container .footer-contact .apps{
+    width: 30%;
+    display: flex;
+}
+footer .container .footer-contact .apps .ios{
+    width: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: center;
+}
+footer .container .footer-contact .apps .android{
+    width: 50%;
+    flex-direction: column;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: center;
+} */
+footer .container .footer-contact .apps{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+footer .container .footer-contact .apps > div{
+    width: 45%;
+    text-align: center;
+}
+footer .rules{
+    margin-top: 5%;
+    background: #188aaf;
+}
+footer .rules .container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+    padding: 1% 0;
+}
+
+
+
+@keyframes headerbackgroundanimation {
+    from{
+        background-position: 0 0 ;
+    }
+    to {
+        background-position: 100% 0 ;
+    }
+}
+@keyframes changemobileimg{
+    25%{
+        background: url('../images/mobile-screen-3.jpeg');
+        background-size : 100% 100%;
+    }
+    75%{
+        background : url('../images/mobile-screen-2.jpeg');
+        background-size : 100% 100%;
+    }
+}
